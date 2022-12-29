@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liftcentrale - Nieuwe Lift Invoer</title>
+    <style type="text/css">
+        fieldset {
+            width: 75%;
+            border: 2px solid #cccccc;
+        }
+
+        label {
+            width: 200px;
+            float: left;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input {
+            border: 1px solid #000;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slavernijbetaling - Nieuwe Invoer</h1>
+    <form action="insert_record.php" method="post">
+        <fieldset>
+            <p>
+                <label for="datum">Datum Aanvang Slavernij (vb: 20230214 (St. Valentines Day)) </label>
+                <input type="text" id="begindatum" name="begindatum" maxlength="13" size="13" />
+            </p>
+            <p>
+                <label for="Datum Einde Slavernij">Datum Einde Slavernij (vb: 20230214) </label>
+                <input type="text" id="einddatum" name="einddatum" maxlength="1" size="1" />
+            </p>
+            <p>
+                <label for="werkadres">Adres Slavernij</label>
+                <input type="text" id="Adres Slavernij" name="werkadres" maxlength="30" size="30" />
+            </p>
+            <p>
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam" maxlength="30" size="30" />
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" maxlength="30" size="30" />
+            </p>
+            <p>
+                <label for="extra">extra</label>
+                <input type="text" id="extra" name="extra" maxlength="200" size="30" />
+            </p>
+        </fieldset>
+        <p> <input type="submit" value="Voeg slavernij record toe" /> </p>
+    </form>
+</body>
+</html>
