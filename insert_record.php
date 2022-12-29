@@ -16,7 +16,8 @@ $naam=$_POST['naam'];
 $email=$_POST['email'];
 $extra=$_POST['extra'];
 
-@$db = new mysqli('localhost', 'root', 'root', 'slavernij');
+  //localhost 
+@$db = new mysqli('srv042112.webreus.net', 'u1007310root', 'oLvq5Fcr#HB', 'slavernij');
 if (mysqli_connect_errno()) {
 echo "<p>Error: Could not connect to database.<br/>
 Please try again later.</p>";
